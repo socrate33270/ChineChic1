@@ -191,27 +191,23 @@
         </div>
       </div>
 
-      <div id="contact">
-     <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Votre nom: <input type="text" name="name" /></label>
-  </p>
-      </div>
-
-  <div class = "form-group>  
-  <p>
-    <label>Votre e.mail: <input type="email" name="email" /></label>
-  </p>
-  </div>
-
-  <div class= "form-group>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Envoyer</button>
-  </p>
-  </div>
+     <div id="contact">
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+            <div class="form-group">
+                <label for="name">Votre nom:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Votre e-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
 </form>
 
   <footer>
